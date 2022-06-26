@@ -1,0 +1,5 @@
+#!/bin/bash
+set -e
+
+docker-compose -f docker-compose.test.yml -p "$COMPOSE_TEST_PROJECT_NAME" \
+  exec php-test bin/console doctrine:migrations:migrate --env=test --no-interaction

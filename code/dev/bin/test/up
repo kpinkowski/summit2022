@@ -1,0 +1,13 @@
+#!/bin/bash
+set -e
+
+PROJECT_DIR="$(readlink -m "$(dirname "$0")/../../..")"
+cd "$PROJECT_DIR"
+
+source ./dev/bin/common/include-env
+
+docker-compose -f docker-compose.test.yml -p "$COMPOSE_TEST_PROJECT_NAME" up -d --remove-orphans
+
+./dev/bin/test/wait-for-db
+
+./dev/bin/test/install

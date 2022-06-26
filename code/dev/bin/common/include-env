@@ -1,0 +1,10 @@
+#!/bin/bash
+ENV_FILE=./.env
+
+if [ ! -f "$ENV_FILE" ]; then
+    echo "Please create .env file" && exit 1
+fi
+
+set -a
+source ./.env
+set +a
