@@ -1,15 +1,11 @@
 # Effective Integration Tests
 
 ## Project information
-Resources for Effective Integration Tests presentation took place on [PHPers Summit 2022](https://summit.phpers.pl).
-Application code is available in `code` directory.
-Presentation PDF file is available in `presentation` directory.
+Code for Effective Integration Tests presentation that took place on [PHPers Summit 2022](https://summit.phpers.pl).
 
 
 ## Authors
-- Kamil Pińkowski
-  - [Github](https://github.com/kpinkowski) 
-  - [LinkedIn](https://www.linkedin.com/feed/)
+- [Kamil Pińkowski](https://github.com/kpinkowski) - [LinkedIn](https://www.linkedin.com/feed/)
 
 ## License info
 MIT License
